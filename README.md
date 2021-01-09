@@ -18,17 +18,34 @@
 1.ROSのsrcフォルダにこのパッケージをインストールします。  
 ```
 cd ~/catkin_ws/src  
-git clonehttps://github.com/Kenta-Akiyama/Alexa_random.git  
+git clone https://github.com/Kenta-Akiyama/Alexa_random.git  
 cd ..  
 catkin_make  
 ```
 
 2.時刻を記録するためにgoogleスプレッドシートを作成します。  
-
+  ファイル名は何でもいいですが、シート名はlogにしてください。  
+  
 3.Google Apps Scriptで、送られてきたデータを書き込むプログラムを作成します。  
+```
+function doPost(e) {
 
+  var rand = e.parameter.rand;  
+
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('log');  
+
+  sheet.appendRow([new Date(), rand]);  
+}  
+```
+  作成したら、メニューから「ウェブアプリケーションとして導入」を開き、指示に従い進んでください。
+  spreadsheet.pyのURLを作成したURLに変更してください。
+  
 4.VoiceflowでAlexaのアプリを作成します。  
+![flow](https://i.gyazo.com/21ae26e2f805be880c6a57a3fe7f0324.png)　　
 
+　上記の画像のように作成してください。
+ 
+ 
 ---
 
 # 実行方法  
@@ -44,5 +61,3 @@ rosrun Alexa_random spreadsheet.py &
 ---
 
 # 動画  
-# ライセンス  
-GNU General Public License v3.0  

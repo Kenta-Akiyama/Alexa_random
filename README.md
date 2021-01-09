@@ -38,7 +38,7 @@ function doPost(e) {
 }  
 ```
   作成したら、メニューから「ウェブアプリケーションとして導入」を開き、指示に従い進んでください。
-  spreadsheet.pyのURLを作成したURLに変更してください。
+  spreadsheet.pyの20行目にあるURLを作成したURLに変更してください。
   
 4.VoiceflowでAlexaのアプリを作成します。  
 ![flow](https://i.gyazo.com/21ae26e2f805be880c6a57a3fe7f0324.png)　　
@@ -52,7 +52,7 @@ function doPost(e) {
 1.ROSとパッケージを起動します。  
 ```
 roscore　&  
-rosrun Alexa_random random.py &  
+rosrun Alexa_random rannsuu.py &  
 rosrun Alexa_random spreadsheet.py &  
 ```
 
@@ -61,3 +61,5 @@ rosrun Alexa_random spreadsheet.py &
 ---
 
 # 動画  
+・Youtube
+[![](https://img.youtube.com/vi/Mp_nhySBATs/0.jpg)](https://youtu.be/XsgV7s5SGYI) 

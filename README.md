@@ -61,5 +61,5 @@ rosrun Alexa_random spreadsheet.py &
 ---
 
 # 動画  
-・Youtube
-[![](https://img.youtube.com/vi/Mp_nhySBATs/0.jpg)](https://youtu.be/XsgV7s5SGYI) 
+・Youtube  
+[](https://youtu.be/XsgV7s5SGYI) 

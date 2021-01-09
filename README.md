@@ -68,3 +68,7 @@ rosrun Alexa_random spreadsheet.py &
 # 動画  
 ・Youtube  
 [<img src=https://i.gyazo.com/ba68dda0f6cefacc1bce6efb195132b4.png>](https://youtu.be/XsgV7s5SGYI) 
+
+
+#ライセンス
+BSD 3-Clause License  

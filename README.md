@@ -51,12 +51,17 @@ function doPost(e) {
 # 実行方法  
 1.ROSとパッケージを起動します。  
 ```
+roslaunch Alexa_random Alexa_random.launch  
+```
+以下の方法でも可能です。  
+```
 roscore　&  
 rosrun Alexa_random rannsuu.py &  
 rosrun Alexa_random spreadsheet.py &  
 ```
 
-2.Voiceflowのテストボタンを押します  
+2.作成したVoiceflowのテストボタンを押します  
+  Alexaアプリの審査に通ることができれば実機での動作も可能です。  
 
 ---
 

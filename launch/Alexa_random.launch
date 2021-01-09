@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="Alexa_random" name="rand" type="rannsuu.py" required="true" />
+	<node pkg="Alexa_random" name="spreadsheet" type="spreadsheet.py" required="true" />
+</launch>

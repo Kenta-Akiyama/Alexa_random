@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>alexa_random</name>
+  <name>Alexa_random</name>
   <version>1.0.0</version>
   <description>Raspberrypi to Alexa package</description>
 

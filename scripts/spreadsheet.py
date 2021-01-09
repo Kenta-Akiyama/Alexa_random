@@ -12,7 +12,7 @@ def cb(message):
 
 if __name__ == '__main__': 
 	rospy.init_node('spreadsheet')
-	sub = rospy.Subscriber('random_num', Int32, cb) 
+	sub = rospy.Subscriber('rand_num', Int32, cb) 
 	pub = rospy.Publisher('spreadsheet_gs', Int32, queue_size=1) 
 	rate = rospy.Rate(1)
 	while not rospy.is_shutdown():
